@@ -1,0 +1,291 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/MainInterface.gd" type="Script" id=1]
+
+[node name="MainInterface" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 19.6759, 324.614, 370.097, 427.75, 474.931 ],
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [ 300.232, 285.0, 315.0 ]
+}
+
+[node name="TextEdit" type="TextEdit" parent="."]
+anchor_left = 0.033
+anchor_top = 0.771
+anchor_right = 0.787
+anchor_bottom = 0.892
+margin_left = 0.200001
+margin_top = -3.05176e-05
+margin_right = 0.200012
+margin_bottom = -3.05176e-05
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CurrentText" type="RichTextLabel" parent="."]
+anchor_left = 0.033
+anchor_top = 0.733
+anchor_right = 0.967
+anchor_bottom = 0.758
+margin_left = 0.200001
+margin_top = 0.159973
+margin_right = -0.200012
+margin_bottom = 0.160004
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Guide" type="Label" parent="."]
+margin_right = 14.0
+margin_bottom = 14.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextList" type="ScrollContainer" parent="."]
+anchor_left = 0.033
+anchor_top = 0.042
+anchor_right = 0.967
+anchor_bottom = 0.677
+margin_left = 0.200001
+margin_top = -0.16
+margin_right = -0.200012
+margin_bottom = 0.039978
+input_pass_on_modal_close_click = false
+size_flags_horizontal = 3
+size_flags_vertical = 3
+follow_focus = true
+scroll_horizontal_enabled = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TextList"]
+margin_right = 560.0
+margin_bottom = 305.0
+rect_clip_content = true
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 10
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer1" type="HBoxContainer" parent="TextList/VBoxContainer"]
+margin_top = 121.0
+margin_right = 560.0
+margin_bottom = 135.0
+custom_constants/separation = 10
+
+[node name="Texts01" type="Label" parent="TextList/VBoxContainer/HBoxContainer1"]
+margin_bottom = 14.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="TextList/VBoxContainer"]
+margin_top = 145.0
+margin_right = 560.0
+margin_bottom = 159.0
+custom_constants/separation = 10
+
+[node name="Texts02" type="Label" parent="TextList/VBoxContainer/HBoxContainer2"]
+margin_bottom = 14.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="TextList/VBoxContainer"]
+margin_top = 169.0
+margin_right = 560.0
+margin_bottom = 183.0
+custom_constants/separation = 10
+
+[node name="Texts03" type="Label" parent="TextList/VBoxContainer/HBoxContainer3"]
+margin_bottom = 14.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AutoAddBtn" type="Button" parent="."]
+anchor_left = 0.81
+anchor_top = 0.773
+anchor_right = 0.963
+anchor_bottom = 0.89
+margin_left = -3.05176e-05
+margin_top = -0.0400391
+margin_right = 0.199951
+margin_bottom = -0.200012
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AutoAddMode" type="RichTextLabel" parent="AutoAddBtn"]
+anchor_top = 0.25
+anchor_right = 1.0
+anchor_bottom = 0.75
+margin_bottom = -3.8147e-06
+mouse_filter = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NegativeHSlider" type="HSlider" parent="."]
+anchor_left = 0.033
+anchor_top = 0.9
+anchor_right = 0.498
+anchor_bottom = 0.933
+margin_left = 0.200001
+margin_top = -3.05176e-05
+margin_right = 0.599976
+margin_bottom = 0.159973
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PositiveHSlider" type="HSlider" parent="."]
+anchor_left = 0.502
+anchor_top = 0.9
+anchor_right = 0.967
+anchor_bottom = 0.933
+margin_left = -0.200012
+margin_top = -3.05176e-05
+margin_right = -0.200012
+margin_bottom = 0.159973
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RangeLegendO" type="RichTextLabel" parent="."]
+anchor_left = 0.475
+anchor_top = 0.942
+anchor_right = 0.525
+anchor_bottom = 0.99
+margin_top = -0.160004
+margin_right = -3.05176e-05
+margin_bottom = -0.200043
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RangeOptionNBtn" type="Button" parent="."]
+anchor_left = 0.035
+anchor_top = 0.94
+anchor_right = 0.475
+anchor_bottom = 0.981
+margin_top = -0.200012
+margin_bottom = 0.119965
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RangeLegendN" type="RichTextLabel" parent="RangeOptionNBtn"]
+anchor_top = 0.15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RangeOptionPBtn" type="Button" parent="."]
+anchor_left = 0.525
+anchor_top = 0.94
+anchor_right = 0.963
+anchor_bottom = 0.981
+margin_left = -3.05176e-05
+margin_top = -0.200012
+margin_right = 0.200012
+margin_bottom = 0.119965
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RangeLegendP" type="RichTextLabel" parent="RangeOptionPBtn"]
+anchor_top = 0.05
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 2.0
+margin_right = 1.0
+mouse_filter = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WindowDialogNLim" type="WindowDialog" parent="."]
+anchor_left = 0.033
+anchor_top = 0.69
+anchor_right = 0.475
+anchor_bottom = 0.89
+margin_left = 0.200001
+margin_top = -0.200012
+margin_bottom = -0.200012
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionButtonNLim" type="OptionButton" parent="WindowDialogNLim"]
+anchor_left = 0.091
+anchor_top = 0.389
+anchor_right = 0.913
+anchor_bottom = 0.594
+margin_left = -0.115002
+margin_top = -0.344002
+margin_right = 0.0549927
+margin_bottom = -0.0240021
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WindowDialogPLim" type="WindowDialog" parent="."]
+anchor_left = 0.525
+anchor_top = 0.69
+anchor_right = 0.967
+anchor_bottom = 0.89
+margin_left = -3.05176e-05
+margin_top = -0.200012
+margin_right = -0.200012
+margin_bottom = -0.200043
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionButtonPLim" type="OptionButton" parent="WindowDialogPLim"]
+anchor_left = 0.091
+anchor_top = 0.389
+anchor_right = 0.913
+anchor_bottom = 0.594
+margin_left = -0.115002
+margin_top = -0.344002
+margin_right = 0.0549927
+margin_bottom = -0.0240021
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="text_changed" from="TextEdit" to="." method="_on_TextEdit_text_changed" flags=3]
+[connection signal="pressed" from="AutoAddBtn" to="." method="_on_AutoAddBtn_pressed"]
+[connection signal="value_changed" from="NegativeHSlider" to="." method="_on_NegativeHSlider_value_changed"]
+[connection signal="value_changed" from="PositiveHSlider" to="." method="_on_PositiveHSlider_value_changed"]
+[connection signal="pressed" from="RangeOptionNBtn" to="." method="_on_RangeOptionNBtn_pressed"]
+[connection signal="pressed" from="RangeOptionPBtn" to="." method="_on_RangeOptionPBtn_pressed"]
+[connection signal="item_selected" from="WindowDialogNLim/OptionButtonNLim" to="." method="_on_OptionButtonNLim_item_selected"]
+[connection signal="item_selected" from="WindowDialogPLim/OptionButtonPLim" to="." method="_on_OptionButtonPLim_item_selected"]
